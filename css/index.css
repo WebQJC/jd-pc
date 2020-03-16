@@ -1,0 +1,452 @@
+
+/* 京东首页的css */
+.jd {
+	/* height: 480px; */
+	/* background-color: pink; */
+	/* position: relative;  */
+}
+.jd-inner {
+	height: 480px;
+	/* background-color: skyblue; */
+	z-index: 999;  /* 只有定位的盒子才有 z-index */
+	/* position: relative;  */
+}
+
+.jd-clo1 {
+	width: 190px;
+	height: 465px;
+	background-color: #fefefe;
+	float: left;
+	padding-top: 15px;
+}
+.jd-clo1 li {
+	padding-left: 10px;
+	height: 28px;
+	line-height: 28px;
+	
+}
+.jd-clo1 ul{
+	position: relative;
+}
+.jd-clo1-r{
+	width: 1000px;
+	height: 478px;
+	border: 1px solid #b8bbb8;
+	box-shadow: 0px 0px 6px 2px #b8bbb8;
+	background-color: #ffffff; 
+	position: absolute;
+	top: -15px;
+	left: 190px; 
+	z-index: 95;
+	display: none; 
+}
+.jd-clo1 ul li:hover .jd-clo1-r{
+	display: block;
+}
+.jd-clo1 li:hover {
+	background-color: #d9d9d9;
+}
+
+.jd-clo1 li a {
+	color: #858585;
+	font-size: 14px;
+	margin: 0 -2px;
+}
+.jd-clo1 li a:hover{
+	color: red;
+}
+.jd-clo1 li span {
+	color: #858585;
+	font-size: 12px;
+}
+
+.jd-clo2 {
+	width: 790px;
+	height: 480px;
+	float: left;
+	margin-left: 10px;
+}
+/* 轮播图部分 */
+.jd-clo2-hd {
+	height: 340px;
+	margin-bottom: 10px;
+	position: relative;
+}
+.jd-clo2-hd ul li{
+	position: absolute;
+    display: none;
+}
+.jd-clo2-hd ul li:first-child {
+	display: block;
+}
+
+.arrow-l, .arrow-r {
+	font-family: "SimSun", "宋体";
+      width: 30px;
+      height: 60px;
+      background-color: rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      cursor: pointer;
+      text-align: center;
+      line-height: 60px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 30px;
+
+}
+.arrow-l {
+	left: 0;
+}
+.arrow-r {
+	right: 0;
+}
+.arrow-l:hover,
+    .arrow-r:hover {
+      background-color: rgba(0, 0, 0, .5);
+    }
+.jd-clo2-hd ol {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -90px;
+	width: 180px;
+	height: 20px;
+	background: rgba(255, 255,255, 0.3);
+	border-radius: 10px;
+}
+.jd-clo2-hd ol  li {
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border-radius: 50%;
+	float: left;
+	margin: 4px 5px;
+	cursor: pointer;
+}
+.jd-clo2-hd .current {
+	background-color: #f10215;
+}
+
+/* 轮播图部分结束 */
+
+.jd-clo2-bd div {
+	width: 390px;
+	height: 130px;
+	/* border: 1px solid red; */
+	overflow: hidden;
+	float: left;
+}
+.jd-clo2-bd div img {
+	width: 400px;
+	height: 100%;
+	transition: margin-left 0.4s;
+}
+.firstPic {
+	margin-right: 10px;
+}
+.jd-clo2-bd div:hover img {
+	margin-left: -10px;
+}
+.jd-clo3 {
+	width: 190px;
+	height: 480px;
+	float: right;
+	background-color: #ffffff;
+}
+.jd-clo3 a {
+	font-size: 12px;
+	color: #747474;
+}
+.user {
+	height: 95px;
+	background-color: #ffffff;
+	padding: 20px 15px 0;
+}
+
+.user-info {
+	height: 40px;
+	padding-top:17px;
+	padding-left: 30px;
+	font-size: 12px;
+	color: #747474;
+	line-height: 22px;
+	position: relative;
+}
+.user-info a  {
+	font-size: 12px;
+	color: #747474;
+}
+.user-info .deng{
+	margin-left: 27px; 
+}
+.user-info a:hover  {
+	
+	color: #f10215;
+}
+.info-img {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: -29px;
+	left: 58px;
+	border-radius: 50%;
+	overflow: hidden;
+	background: url(../images/sprite_userinfo@1x.png) no-repeat -70px 0;
+
+}
+.info-img  img {
+	width: 40px;
+	border-radius: 50%;
+	margin: 5px;
+}
+.user-profit {
+	margin-top: 8px;
+}
+.user-profit a {
+   width: 70px;
+   height: 20px;
+   /* border: 2px solid #f10215; */
+   display: block;
+   float: left; 
+   font-size: 12px;
+   color: #f10215;
+   text-align: center;
+   line-height: 20px;
+   margin-right: 10px;
+   border-radius: 10px 10px 10px 10px;
+   box-shadow: 2px 3px 15px 2px #e0e0e0;
+   transition: background-color 1s;
+   transition: color 1s;
+}
+.user-profit a:nth-child(2){
+	background-color: #363634;
+	color: #cfc284; 
+}
+.user-profit a:hover {
+	background-color: #f10215;
+	color: #fff;
+}
+
+.news {
+	height: 149px;
+	/* border: 1px solid #ccc; */
+	padding: 5px 15px 0;
+}
+.tab-hd {
+	
+	padding: 3px 0;
+	position: relative;
+}
+
+.news .tab-hd .jdflash {
+	color: #1e1e1e;
+	font-weight: bold;
+	font-size: 14px;
+}
+.news .more1 {
+	position: absolute;
+	top: 8px;
+	right: 0px;
+
+}
+.news .more1:hover{
+	color: #4d4a4a;
+}
+
+.tab-bd {
+	margin-top: 10px;
+}
+.tab-bd li {
+	height: 23px;
+	line-height: 23px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.tab-bd li span{
+	width: 35px;
+	height: 18px;
+	margin-top: 3px; 
+	text-align: center;
+	line-height: 21px;
+	background-color: #90b0c6;
+	display: block; 
+	float: left;
+	color: #ffffff;
+	font-weight: bold;
+	border-radius: 4px 4px 4px 4px; 
+	margin-right: 8px; 
+}
+.tab-bd li a:hover{
+	color: red;
+}
+.jd-service  {
+	height: 209px;
+	/* background-color: skyblue; */
+	width: 190px;
+	overflow: hidden;
+}
+.jd-service  ul {
+	width: 195px;
+}
+.jd-service li {
+	width: 47px;
+	height: 69px;
+	/* background-color: purple; */
+	float: left;
+	/* border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc; */
+}
+.jd-service li a {
+	width: 100%;
+	height: 100%;  /* 根据父亲 */
+	/* height: auto; 针对于自己的高度和宽度 */
+	display: block;
+}
+.jd-service  i {
+	display: block;
+	width: 24px;
+	height: 24px;
+	margin: 15px auto 8px;
+	background: url(../images/sprite_fs@1x.png) no-repeat;
+}
+.jd-service ul li:nth-child(1) i{
+	background-position: 0px -87px; 
+}
+.jd-service ul li:nth-child(1) i:hover{
+	background: url(../images/sprite_fs@1x1.png) no-repeat 0px -87px;
+}
+.jd-service ul li:nth-child(2) i{
+	background-position: 0px -43px; 
+}
+.jd-service ul li:nth-child(2) i:hover{
+	background: url(../images/sprite_fs@1x1.png) no-repeat 0px -43px; 
+}
+.jd-service ul li:nth-child(3) i{
+	background-position: -45px -88px; 
+}
+.jd-service ul li:nth-child(3) i:hover{
+	background: url(../images/sprite_fs@1x1.png) no-repeat -45px -88px;
+}
+.jd-service ul li:nth-child(4) i{
+	background-position: -88px -0px; 
+}
+.jd-service ul li:nth-child(4) i:hover{
+	background: url(../images/sprite_fs@1x1.png) no-repeat -88px -0px;
+}
+.jd-service ul li:nth-child(5) i{
+	background-position: -88px -43px; 
+}
+.jd-service ul li:nth-child(5) i:hover{
+	background: url(../images/sprite_fs@1x1.png) no-repeat -88px -43px;
+}
+.jd-service ul li:nth-child(6) i{
+	background-position: 0px -0px; 
+}
+.jd-service ul li:nth-child(6) i:hover{
+	background: url(../images/sprite_fs@1x1.png) no-repeat 0px -0px;
+}
+.jd-service ul li:nth-child(7) i{
+	background-position: -44px -43px; 
+}
+.jd-service ul li:nth-child(7) i:hover{
+	background: url(../images/sprite_fs@1x1.png) no-repeat -44px -43px; 
+}
+.jd-service ul li:nth-child(8) i{
+	background-position: -88px -88px; 
+}
+.jd-service ul li:nth-child(8) i:hover{
+	background: url(../images/sprite_fs@1x1.png) no-repeat -88px -88px; 
+}
+.jd-service ul li:nth-child(9) i{
+	background-position: -133px 0px; 
+}
+.jd-service ul li:nth-child(9) i:hover{
+	background: url(../images/sprite_fs@1x1.png) no-repeat -133px 0px; 
+}
+.jd-service ul li:nth-child(10) i{
+	background-position: -133px -44px; 
+}
+.jd-service ul li:nth-child(10) i:hover{
+	background: url(../images/sprite_fs@1x1.png) no-repeat -133px -44px; 
+}
+.jd-service ul li:nth-child(11) i{
+	background-position: -133px -88px; 
+}
+.jd-service ul li:nth-child(11) i:hover{
+	background: url(../images/sprite_fs@1x1.png) no-repeat -133px -88px; 
+}
+.jd-service ul li:nth-child(12) i{
+	background-position: -44px 0px; 
+}
+.jd-service ul li:nth-child(12) i:hover{
+	background: url(../images/sprite_fs@1x1.png) no-repeat -44px 0px;
+}
+.jd-service a:hover{
+	color: red;
+}
+.jd-service  p {
+	text-align: center;
+}
+/*右边导航条*/
+.right-nav{
+	height: 615px;
+	width: 40px;
+	/*background-color: red;*/
+	border-right: 7px solid #7a6e6e;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	z-index: 100;
+}
+.right-nav-center{
+	width: 30px;
+	height: 255px;
+	/*border: 1px solid yellow;*/
+	position: absolute;
+	top: 212px;
+	right: 0px;
+}
+.right-nav-center ul li{
+	width: 33px;
+	height: 35px;
+	background-color: #7a6e6e;
+	margin-top: 2px;
+	position: relative;
+	border-radius: 4px 4px 4px 4px;
+}
+.right-nav-center ul li:nth-of-type(1){
+	margin-top: 0px;
+}
+.right-nav-bottom{
+	width: 33px;
+	height: 35px;
+	background-color: #7a6e6e;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	border-radius: 4px 4px 4px 4px;
+}
+.right-nav .right-nav-item{
+	width: 65px;
+	height: 35px;
+	background-color: red;
+	position: absolute;
+	top: 0px;
+	right: 25px;
+	border-radius: 4px 4px 4px 4px;
+	display: none;
+	line-height: 35px;
+	font-size: 12px;
+	text-align: center;
+	color: #ffffff;
+}
+.right-nav-bottom:hover , .right-nav-center ul li:hover {
+	background-color: red;
+}
+.right-nav-bottom:hover .right-nav-item, .right-nav-center ul li:hover .right-nav-item{
+	display: block;
+}
+/*右边导航条结束*/
